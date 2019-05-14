@@ -1,0 +1,747 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/11/2018, 20:49:44
+    Author     : JOAO_007831
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/11/2018, 20:55:34
+    Author     : JOAO_007831
+*/
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    width: 768px;
+    /* make it look decent enough */
+    background: #EDF4DA;
+    color: #BF1E2D;
+    font-family: "Avenir Next", "Avenir", Century Gothic;
+}
+
+#img_480{
+    margin: 0;
+    position: absolute;
+    display: none;    
+}
+#logo_480{
+    display: none;   
+}
+
+#img_768{
+    margin: 0;
+    position: absolute;
+    display: block;
+
+}
+#logo_768{
+    position: absolute;
+    left: 301px;
+    top: 100px;
+}
+
+/* -------------------------------------------------------- MENU ----------------------------*/
+#menu{
+    position: fixed;
+    bottom: 0px;
+    margin-top:-50px;
+    width: 100%;
+    height: 83px;
+    background-color: #423617;
+    z-index: 1;
+}
+
+#icones_menu{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#iHome{
+    width: 65px;
+    height: 65px;
+}
+
+#iVendas{
+    width: 29px;
+    height: 51px;
+}
+#iDicas{
+    width: 39px;
+    height: 62px; 
+}
+#iBolsa{
+    width: 75px;
+    height: 55px;
+}
+#iEcolog{
+    width:50px;
+    height: 55px; 
+}
+#iRotas{
+    width: 56px;
+    height: 55px;
+}
+#iUser{
+    width: 47px;
+    height: 56px;
+}
+
+/* -------------------------------------------------------- Boas vindas Texto ----------------------------*/
+
+#bv{
+    font-family: Century Gothic;
+    position: absolute;
+    left: 246px;
+    top: 37px;
+    color: #fff;
+    font-size: 65px;
+}
+#bv2{
+    position: absolute;
+    top: 491px;
+    color:#fff;
+    left: 80px;
+    font-size: 35px;
+
+}
+#bv3{
+    position: absolute;
+    top: 491px;
+    color: #fff;
+    left: 533px;
+    font-size: 35px;
+}
+
+#local_480{
+    display: none;
+    position: absolute;
+    top: 419px;
+    left: 201px;
+
+}
+
+/* -------------------------------------------------------- BOX's' ----------------------------*/
+/* ---------------VENDAS ----------------*/
+#boxVenda{
+    background-color: #fff;
+    position: absolute;
+    top: 1081px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 257px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxVenda h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+div#boxVenda p{
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+#img_venda480{
+    display: none;
+
+}
+#img_venda768{
+    display: block;
+    margin-left: 74px;
+    padding: 16px 0px;
+    margin-top: 10px;
+     
+}
+#iPapel{
+    margin-right: 23px;
+}
+#iPlastico{
+    margin-right: 23px;
+}
+#iVidro{
+    margin-right: 23px;
+}
+#iMetal{
+   margin-right: 23px; 
+}
+#iOrganico{
+    margin-right: 23px;
+}
+/* --------------- DICAS ----------------*/
+#boxDicas{
+    background-color: #fff;
+    position: absolute;
+    top: 1422px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 225px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+
+div#boxDicas h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -24px;
+    margin-left: -14px;
+}
+div#boxDicas p{
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+#img_dicas768{
+    display: block;
+    margin-left: 95px;
+    margin-top: 23px;
+}
+#img_dicas{
+    display: none;
+}
+
+
+
+/* --------------- BOLSA ----------------*/
+#boxBolsa{
+    background-color: #fff;
+    position: absolute;
+    top: 1731px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 548px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxBolsa h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+div#boxBolsa p{
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+#img_bolsa768{
+    display: block;
+    margin-top: 43px;
+    margin-left: 59px;
+}
+#img_bolsa480{
+    display: none;
+}
+/* --------------- LOGIN ----------------*/
+#boxLogin{
+    background-color: #fff;
+    position: absolute;
+    top: 2363px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 350px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxLogin h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 37px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+#img_login{
+    margin-left: 297px;
+    margin-top: 10px;
+}
+#img_login768{
+    display: block;
+    margin-top: 7px;
+    margin-left: 293px;
+}
+#img_login480{
+    display: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+body, input, select, textarea, button {
+    font-family: "Avenir Next", "Avenir", Century Gothic;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.5em;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="password"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+
+}
+
+
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: white;/*cor de fundo ao clicar*/
+    outline: 2px solid  #169BD5;
+
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 20px;
+    background: #169BD5;
+    border: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #FFF;
+    padding: 0.2em 0.2em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    width: 332.38px;
+    height: 38px;
+    border-radius: 25px;
+    margin-left: 123px;
+}
+
+.botao:hover {
+    background: #169BD1;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    left:50%
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
+}
+
+.config {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    font-weight: bold;
+}
+
+.info {
+    float: left;
+    font-size: 20px;
+    color: black;
+    margin-top: -8px;
+    margin-right: 10px;
+}
+.esqueceu{
+    margin-top: 1px;
+    margin-right: 103px;
+    margin-left: 61px;
+}
+
+#user {
+    width: 85px; 
+    height: 85px; 
+    position: absolute; 
+    top: 250px; 
+    left: 193px; 
+    opacity: 1; 
+    z-index: 99;
+}
+
+.tamanho-campo{
+    width: 36em;
+
+
+}
+/* --------------- Ecolog ----------------*/
+#boxEcolog{
+    background-color: #fff;
+    position: absolute;
+    top: 2797px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 264px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxEcolog h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+div#boxEcolog p{
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+#img_ecolog480{
+    display: none;
+}
+#img_ecolog768{
+    margin-top:15px;
+    margin-left: 275px;
+}
+/* --------------- Fale Conosco ----------------*/
+
+#boxFaleConosco{
+    background-color: #fff;
+    position: absolute;
+    top: 3145px;
+    left: 10px;
+    padding: 30px;
+    width: 681px;
+    height: 370px;
+    border: none solid thick;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxFaleConosco h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 705px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -12px;
+}
+.mensagem{
+    width: 21em; 
+}
+.grupoM{
+    margin-bottom: 1em;
+}
+
+.mCampo {
+    margin-bottom: 1em;
+}
+
+.mCampo label {
+    margin-top: 14px;
+    margin-bottom: 5px;
+    color: black;
+    display: block;
+
+}
+.campoInputN{
+    width: 648px;
+    border: 1px solid #CCC;
+    display: block;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.campoInputE{
+    width: 648px;
+    border: 1px solid #CCC;
+    display: block;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);     
+}
+.lAssunto{
+    color:#000;
+}
+.select{
+    width: 648px;
+    height: 35px;
+    display: block;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin-left: 6px;
+
+}
+.select select{
+    width: 648px;
+    height: 35px;
+}
+.Lmensagem{
+    color: #000;
+}
+.msg{
+    margin-top: 4px;
+    margin-left: 1px;
+    color: #000;
+}
+.textArea{
+    width: 648px;
+}
+.enviarM {
+    font-size: 20px;
+    background: #169BD5;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.2em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    width: 319.38px;
+    height: 30px;
+    border-radius: 25px;
+    margin-left: 178px;
+    margin-top: 3px;
+}
+
+/* ---------------------------------------------------------------------------- Ecopontos ----------------------------------------------------------------------  */
+
+#logo-eco480{
+    display: none;
+}
+#img-cabecalho480{
+  display: none;
+}
+#img-cabecalho768{
+    position: absolute;
+    display: block;
+}
+#topo-ecopontos480{
+    display: none;
+}
+#boxEcopontos{
+    background-color: #fff;
+    position: absolute;
+    top: 93px;
+    left: 30px;
+    width: 708px;
+    height: 679px;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;    
+}
+div#boxEcopontos h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 668px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+/* --- Imgs 480 --- */
+.ientulho{
+    display:none;
+    padding-left: 10px; 
+}
+.ipilhas{
+    display:none;
+    padding-left: 10px; 
+}
+.ieletrodomesticos{
+    display:none;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.ieletronicos{
+    display:none;
+    padding-top: 30px; 
+    padding-left: 10px;
+}
+.imoveis{
+    display:none;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.ioleo{
+    display:none;
+    padding-top: 30px;
+}
+.ibateria{
+    display:none;
+    padding-top: 30px;
+}
+
+/* -------- IMG 768 ------- */
+#img-ecopontos768{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:20px;  
+    padding-right:30px; 
+    
+}
+#logo-eco768{
+    position: absolute;
+    left: 351px;
+    margin-top: 3px;
+}
+.ientulho768{
+    padding-left: 10px; 
+}
+.ieletrodomesticos768{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.ieletronicos768{
+    padding-top: 30px; 
+    padding-left: 10px;
+}
+.imoveis768{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.ioleo768{
+    padding-top: 30px;
+}
+.ibateria768{
+    padding-top: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------------ FINAL Ecopontos ------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------------------------ Mapeamento ------------------------------------------------------------------------*/
+
+#boxMapeamento{
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 31px;
+    width: 708px;
+    height: 592px;
+    border-radius: 20px;
+    box-shadow: #A9AE9C 0.5em 0.5em 0.3em;
+    margin-bottom: 100px;
+}
+div#boxMapeamento h1{
+    background-color: #A5D169;
+    color: #000;
+    width: 668px;
+    height: 38px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#centralizacaoForm{
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.campoLocal{
+    margin-bottom: 1rem;
+    color: black;
+    display: block;
+}
+.local{
+    width: 40rem;
+    padding: 4.2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid #CCC;
+    margin-left: -6px;
+}
+
+.campoDestino {
+    margin-bottom: 1rem;
+    color: black;
+    display: block;
+}
+.tDestino{
+    margin-right: 30px;    
+}
+.destino{
+    width: 40rem;
+    margin-left: -6px;
+    padding: 4.2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid #CCC;
+}
+#googleMap{
+   position: absolute;
+   width:558px;
+   height:290px;
+   margin-top: 335px;
+   margin-left: 107px;
+   z-index: 0;
+}
+
+
+
+
+

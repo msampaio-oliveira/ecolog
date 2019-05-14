@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Teste</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="public/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet"  href="public/css/jquery.toast.min.css">
+        <script src="public/js/jquery.toast.min.js"></script>
+
+        <script src="public/js/toast.js"></script>
+        <script src="public/js/validations.js"></script>
+        <script src="public/js/filter.js"></script>
+        <script src="public/js/ajax.js"></script>
+        
+    </head>
+    <body style="width: 50%; height: 50%; border: 1px solid black;">
+        <div>
+            Testando
+            <button onclick="toastError('Registro inserido com sucesso!')">Chama esse troço</button><br>
+            <input type="text" name="docUser" onkeyup="mascara(this, mvalor)" onblur="validarDocumento('12345678901')"/><br>
+            <input type="text" name="Login" id="txtLogin" onkeyup="mascara(this, mcep)" maxlength="9" onblur="validarLogin('Poupou')"/>
+        </div>
+    </body>
+</html>
